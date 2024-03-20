@@ -58,7 +58,7 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 0 2%;
+  padding: 1px;
   z-index: 1;
   background-image: url(Imagens/gradiente.webp);
   background-position: center;
