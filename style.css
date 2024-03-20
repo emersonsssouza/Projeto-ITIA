@@ -47,7 +47,7 @@ body {
   overflow-x: hidden;
   background-image: url(Imagens/gradiente.webp);
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: repeat-y;
   background-size: contain;
   z-index: 0;
 }
