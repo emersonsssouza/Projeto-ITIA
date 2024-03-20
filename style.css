@@ -1,0 +1,1048 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: "Azonix";
+  src: url("fonts/Azonix.otf");
+}
+
+@font-face {
+  font-family: "Origin";
+  src: url(fonts/OriginTech\ personal\ use.otf);
+}
+
+@font-face {
+  font-family: "Robota";
+  src: url(fonts/Robota-NonCommercial.otf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 17px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #610725;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ed145b;
+  border-radius: 10px;
+}
+
+webkit-scroll i {
+  margin: auto 5px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-image: url(Imagens/gradiente.webp);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
+  z-index: 0;
+}
+
+.header {
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 2%;
+  z-index: 1;
+  background-image: url(Imagens/gradiente.webp);
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
+  box-shadow: 2px 2px 5px black;
+}
+
+.header .logo {
+  font-weight: bolder;
+  color: #fff;
+  font-size: 1rem;
+  z-index: 1;
+}
+
+.header .logo span {
+  color: #ed145b;
+  font-size: 50px;
+  font-family: "Robota";
+  padding: 0.5rem;
+  letter-spacing: 13.5px;
+  display: flex;
+  z-index: 1;
+}
+
+.header .logo p {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  padding: 0.5rem;
+}
+
+.header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .navbar a {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  color: #fff;
+  z-index: 1;
+}
+
+.header .navbar a:hover {
+  background: #ed145b;
+  border-radius: 4px;
+  color: black;
+}
+
+#menu-btn {
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+
+.carrosel {
+  filter: drop-shadow(0px 0px 2px black);
+  overflow: hidden;
+  height: 370px;
+  width: 90vw;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  transition: 0.4s ease-in-out;
+  transform: translateX(0);
+  background-size: cover;
+}
+
+.container img {
+  width: 1700px;
+  min-width: 1700px;
+  height: 370px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+main {
+  background-image: url(Imagens/gradiente.webp);
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: contain;
+  width: 100vw;
+  margin: auto;
+}
+
+section.apresentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  margin: auto;
+}
+
+.apresentation p {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-size: 8.1rem;
+  padding-top: 7rem;
+  letter-spacing: 22px;
+}
+
+span.f1 {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.578);
+  text-transform: uppercase;
+}
+
+span.f2 {
+  font-size: 20px;
+  display: inline-block;
+  transform: rotate(270deg);
+  color: #ed145b;
+}
+
+span.f3 {
+  color: #ed145b;
+  font-weight: 550;
+}
+
+.vestibular {
+  width: 100vw;
+  height: 10rem;
+  background-image: url(Imagens/gradiente.webp);
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-y;
+}
+
+.vestibular>h1 {
+  margin: 3rem;
+  text-align: center;
+  color: #91a3ad;
+  font-size: 3rem;
+  font-weight: normal;
+  letter-spacing: 15px;
+}
+
+section.apresentation-video {
+  background-image: url(Imagens/gradiente.webp);
+  background-size: contain;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+  margin: 1rem auto;
+}
+
+.apresentation-box-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+}
+
+.apresentation-subtitle h2 {
+  text-align: center;
+  color: #ed145b;
+  margin: 1.2rem auto;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ed145b;
+}
+
+.apresentation-subtitle p {
+  color: #ACC1C7;
+  text-align: center;
+  padding: 2rem;
+  margin: 1.2rem auto;
+}
+
+.apresentation-subtitle a {
+  display: block;
+  margin: 20px auto;
+  width: max-content;
+  padding: 15px 40px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid #ed145b;
+  color: #ed145b;
+}
+
+table {
+  max-width: max-content;
+  color: #ACC1C7;
+  text-align: center;
+}
+
+table>tr,
+td {
+  border-bottom: 1px solid #ed145b;
+  padding: 0.4rem;
+  margin: 0;
+}
+
+
+video.player-video {
+  background-color: black;
+  display: block;
+  border-radius: 10px;
+  margin: 20px auto;
+  height: auto;
+  width: 40%;
+  max-width: 90%;
+}
+
+video.player-video::poster {
+  width: 100%;
+}
+
+section.apresentation-content {
+  height: auto;
+  width: 100vw;
+  margin: 5rem auto 0;
+}
+
+.apresentation-box {
+  margin: 4rem auto;
+}
+
+.apresentation-box h1 {
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  color: transparent;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px #ed145b;
+}
+
+.apresentation-box p {
+  max-width: 90%;
+  text-align: center;
+  margin: auto;
+  color: white;
+  font-size: 25px;
+  letter-spacing: 3px;
+  word-spacing: 3px;
+  line-height: 40px;
+}
+
+section#features {
+  display: block;
+  background-image: linear-gradient(to right, #080a0b, #15191c, #25292d);
+}
+
+.box-titulo {
+  color: #91a3ad;
+  background-image: url(Imagens/gradiente.webp);
+  background-repeat: repeat-y;
+  background-size: contain;
+  font-size: 50px;
+  padding: 2rem;
+  font-weight: bold;
+}
+
+.box-container {
+  display: grid;
+  background-image: url(Imagens/gradiente.webp);
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: contain;
+  margin: auto;
+  padding: 2rem;
+  /*Vai cria o auto-fit também tenta 
+    colocar quantas colunas for possivel, expandindo os itens para caber no espaço disponível.E com controle do tamanho mínimo e máximo dos itens.*/
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 0px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1px;
+  background-color: transparent;
+  padding: 30px 10px;
+  width: 280px;
+  height: 350px;
+}
+
+.content-box {
+  text-align: justify;
+  width: 100%;
+  height: 20rem;
+  margin: 0;
+}
+
+p.title {
+  color: #91a3ad;
+  font-weight: 500;
+  font-size: 19px;
+  margin: 10px 0px;
+}
+
+p.subtitle {
+  color: #91a3ad;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.content-data {
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content ul>li {
+  width: 100%;
+  font-size: 12px;
+  color: white;
+  padding: 10px 0px;
+  list-style-type: none;
+}
+
+li.information-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid #91a3ad;
+  border-bottom: 1px solid #91a3ad;
+}
+
+li.information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #91a3ad;
+}
+
+span.info-text {
+  color: #ed145b;
+}
+
+.box:hover {
+  background-color: #ed145b;
+  color: black;
+  font-weight: bold;
+  transition: 1s;
+}
+
+.box:hover p {
+  transition: 1s;
+  color: #080a0b;
+  font-weight: 400;
+}
+
+.box:hover span {
+  color: black;
+}
+
+.information-container:hover,
+.information-container:hover span,
+.information:hover,
+.information:hover span {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+section.challenges {
+  width: 100vw;
+  height: auto;
+  background-image: url(Imagens/gradiente.webp);
+  background-repeat: repeat-y;
+  background-size: contain;
+  margin: 5rem auto;
+}
+
+.challenges h1 {
+  color: transparent;
+  font-size: 50px;
+  text-align: center;
+  word-spacing: 2px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px #ed145b;
+}
+
+.content-challenges {
+  margin: 1.5rem 0rem;
+}
+
+.challenges .content-challenges p {
+  color: #91a3ad;
+  font-size: 21px;
+  text-align: center;
+  font-weight: normal;
+  margin: 5px auto;
+}
+
+section.content-background {
+  width: 100vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.content-background img {
+  display: flex;
+  width: 95%;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.text-background {
+  position: absolute;
+  text-align: left;
+  color: #91a3ad;
+  margin: 4rem;
+  font-size: 50px;
+
+  font-weight: lighter;
+}
+
+.text-background p {
+  font-family: "Robota";
+}
+
+footer {
+  width: 100%;
+  padding: 2rem;
+  margin: 2rem auto;
+  background-image: url(Imagens/gradiente.webp);
+  background-repeat: repeat-y;
+  background-size: contain;
+}
+
+.footer-cabecalho {
+  width: 95vw;
+  border: 1px solid #515b5f;
+  border-radius: 10px;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 0px;
+  color: white;
+}
+
+.footer-content {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+.footer-content a {
+  font-size: 13px;
+}
+
+.footer-links a {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0.2rem;
+  margin: auto 2px;
+  transition: 0.4ms ease-in-out;
+}
+
+.footer-links a:hover {
+  border: 1.4px solid white;
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-icons p {
+  color: #91a3ad;
+  font-size: 10px;
+  letter-spacing: 1px;
+  line-height: 2.5rem;
+}
+
+.footer-content a {
+  color: #91a3ad;
+  text-decoration: none;
+  line-height: 2.5rem;
+  transition: 1s ease;
+}
+
+.footer-content a:hover {
+  cursor: pointer;
+  color: white;
+}
+
+#identifier-main {
+  color: #ed145b;
+  padding-bottom: 3.5rem;
+  font-size: 3rem;
+  font-family: "Robota";
+  font-weight: bold;
+  letter-spacing: 5px;
+  transition: 1s ease;
+}
+
+#identifier-main:hover {
+  cursor: pointer;
+  color: white;
+}
+
+#secondary-identifier {
+  color: #ed145b;
+  font-size: 0.7rem;
+  padding-bottom: 2rem;
+}
+
+section.end {
+  width: 100%;
+  height: 50px;
+}
+
+.end p#dev,
+a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.content-curso {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 769px) {
+  .controls {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .header .navbar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    animation: slideDown 0.5s forwards;
+  }
+
+  .features,
+  .box-container {
+    display: none;
+  }
+
+  .header .navbar.active {
+    display: block;
+  }
+
+  /*Teste*/
+  .header .navbar.active a {
+    display: block;
+    font-family: 'Azonix';
+    font-size: 20px;
+    letter-spacing: 10px;
+    margin: 10px 0;
+  }
+
+  #menu-btn {
+    display: block;
+  }
+
+  .apresentation,
+  .apresentation p {
+    margin: 1rem;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+  }
+
+  .vestibular {
+    margin: 1rem;
+    height: 1rem;
+  }
+
+  .vestibular h1 {
+    font-size: 20px;
+  }
+
+  .apresentation-video {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .apresentation-subtitle {
+    margin: 1rem;
+  }
+
+  .apresentation-subtitle h2 {
+    width: 90%;
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+
+  .apresentation-subtitle p {
+    width: 90%;
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+
+  table {
+    margin: auto;
+  }
+
+  /*Nesta parte precisa arrumar o elemento de tabela em media querie*/
+  video.player-video {
+    width: 90%;
+  }
+
+  section.apresentation-content {
+    margin: 0.5rem;
+  }
+
+  .apresentation-box {
+    margin: 0.5rem;
+  }
+
+  .apresentation-box h1 {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+
+  .apresentation-box p {
+    font-size: 13px;
+    text-align: justify;
+  }
+
+  .box-titulo {
+    margin: auto;
+    width: 90vw;
+    padding: 0.5rem;
+  }
+
+  .box-titulo h1 {
+    font-size: 3rem;
+  }
+
+  .content-curso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box-curso {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  .container-curso {
+    margin-top: 0rem auto;
+    margin-bottom: 2rem;
+    min-height: 200px;
+
+  }
+
+  .content-data-curso {
+    margin-top: max-content auto;
+    min-height: max-content;
+  }
+
+  p.title-curso,
+  p.subtitle-curso {
+    margin: 0.1rem;
+    padding: 0.1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+  }
+
+  .curso {
+    width: 90%;
+    min-height: 300px;
+    margin: auto;
+    color: white;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: none;
+    /* Oculta todas as caixas por padrão */
+    animation: slideIn 1s ease-out;
+    /* Aplica a animação de movimento */
+  }
+
+  .curso.hidden {
+    display: none;
+    /* Altera a exibição para ocultar a caixa */
+  }
+
+  @keyframes slideIn {
+    from {
+      margin-left: 100%;
+      /* Começa da esquerda para fora da tela */
+    }
+
+    to {
+      margin-left: 0;
+      /* Move a caixa para a posição inicial */
+    }
+  }
+
+  .controls {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .controls button {
+    background-color: #15191c;
+    color: #ed145b;
+    width: max-content;
+    padding: 0.8rem 1.5rem;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  section.challenges {
+    margin: 0.5rem;
+  }
+
+  .content-challenges h1,
+  p {
+    font-size: 25px;
+  }
+
+  .challenges .content-challenges p {
+    text-align: justify;
+    font-size: 1.1rem;
+    margin: 0rem 1.5rem;
+    line-height: 2rem;
+  }
+
+  .text-background {
+    margin: 0.5rem 2rem;
+  }
+
+  footer {
+    margin: 2rem auto;
+    padding: 0.3rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-content {
+    width: max-content;
+    padding: 0.5rem;
+  }
+
+  .footer-content a {
+    font-size: 15px;
+  }
+
+  .footer-content p#identifier-main {
+    padding-bottom: 0.5rem;
+  }
+
+  .footer-content p#secondary-identifier {
+    font-size: 15px;
+    padding-bottom: 0.8rem;
+  }
+
+  .end p#dev {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+
+  .apresentation {
+    margin: auto;
+    height: auto;
+    padding: 2.5rem;
+  }
+
+  .apresentation p {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  #vestibular {
+    height: max-content;
+    margin: 0.5rem;
+  }
+
+  #vestibular h1 {
+    margin: 1rem;
+  }
+
+  .apresentation-video {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .apresentation-subtitle {
+    width: 90vw;
+    padding: 1px;
+  }
+
+  .apresentation-subtitle h2 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .apresentation-subtitle p {
+    font-size: 23px;
+  }
+
+  table {
+    margin: auto;
+    padding: 2rem 0rem;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 25px;
+  }
+
+  video.player-video {
+    width: 90vw;
+  }
+
+  section.apresentation-content {
+    margin: 0.5rem;
+  }
+
+  .apresentation-box {
+    margin: 0.5rem;
+  }
+
+  .apresentation-box h1 {
+    max-width: 90vw;
+  }
+
+  .apresentation-box p {
+    text-align: justify;
+  }
+
+  div.box-titulo {
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    max-width: 90vw;
+  }
+
+  .features {
+    margin: auto;
+  }
+
+  .box-container {
+    margin: auto;
+    max-width: 90vw;
+  }
+
+  section.challenges {
+    margin: 0.5rem auto;
+  }
+
+  .content-challenges {
+    max-width: 90vw;
+    margin: auto
+  }
+
+  .challenges .content-challenges p {
+    max-width: 90vw;
+    text-align: justify;
+    padding-top: 1rem;
+  }
+
+  .end p {
+    font-size: 1.5rem;
+  }
+
+}
