@@ -463,6 +463,7 @@ section.challenges {
 }
 
 .challenges .content-challenges p {
+  max-width: 80vw;
   color: #91a3ad;
   font-size: 21px;
   text-align: center;
