@@ -21,8 +21,6 @@
   src: url(fonts/Robota-NonCommercial.otf);
 }
 
-
-/*
 html {
   scroll-behavior: smooth;
 }
@@ -39,6 +37,9 @@ html {
   background-color: #ed145b;
   border-radius: 10px;
 }
+
+/*
+
 webkit-scroll i {
   margin: auto 5px;
 }
@@ -508,8 +509,8 @@ section.content-background {
 
 footer {
   width: 100%;
-  padding: 2rem;
-  margin: 0rem auto;
+  padding: 0.9rem;
+  margin: auto;
   background-image: url(Imagens/gradiente.webp);
   background-repeat: repeat-y;
   background-size: contain;
@@ -522,7 +523,6 @@ footer {
   padding: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: 0px;
   color: white;
 }
 
