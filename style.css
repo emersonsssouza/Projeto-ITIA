@@ -663,6 +663,10 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 2px;
+  }
+
   @keyframes slideDown {
     from {
       transform: translateY(-100%);
@@ -883,7 +887,7 @@ a {
   }
 
   footer {
-    margin: 2rem auto;
+    margin: 0rem auto;
     padding: 0.3rem;
     display: flex;
     justify-content: center;
@@ -941,6 +945,9 @@ a {
 
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+  ::-webkit-scrollbar {
+    width: 2px;
+  }
 
 
   .apresentation {
