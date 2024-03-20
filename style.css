@@ -3,6 +3,8 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 100vw;
 }
 
 @font-face {
@@ -661,57 +663,9 @@ a {
   .controls {
     display: none;
   }
-
-
-
-
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-  ::-webkit-scrollbar {
-    width: 17px;
-  }
-
-  ::-webkit-scrollbar-track {
-    background-color: #610725;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background-color: #ed145b;
-    border-radius: 10px;
-  }
-
-  webkit-scroll i {
-    margin: auto 5px;
-  }
 }
 
 @media only screen and (max-width: 768px) {
-  html {
-    scroll-behavior: smooth;
-  }
-
-  ::-webkit-scrollbar {
-    width: 17px;
-  }
-
-  ::-webkit-scrollbar-track {
-    background-color: #610725;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background-color: #ed145b;
-    border-radius: 10px;
-  }
-
-  webkit-scroll i {
-    margin: auto 5px;
-  }
-
-
-
 
 
   @keyframes slideDown {
@@ -992,38 +946,6 @@ a {
 
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  html {
-    scroll-behavior: smooth;
-  }
-
-  ::-webkit-scrollbar {
-    width: 17px;
-  }
-
-  ::-webkit-scrollbar-track {
-    background-color: #610725;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background-color: #ed145b;
-    border-radius: 10px;
-  }
-
-  webkit-scroll i {
-    margin: auto 5px;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
