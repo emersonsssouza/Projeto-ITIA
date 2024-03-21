@@ -664,7 +664,11 @@ a {
 
 @media only screen and (max-width: 768px) {
   ::-webkit-scrollbar {
-    width: 0.1px;
+    width: 1px;
+  }
+
+  webkit-scroll i {
+    display: none;
   }
 
   @keyframes slideDown {
@@ -946,7 +950,7 @@ a {
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   ::-webkit-scrollbar {
-    width: 0.1px;
+    width: 1px;
   }
 
   .apresentation {
