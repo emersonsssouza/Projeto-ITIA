@@ -37,9 +37,10 @@ html {
   border-radius: 10px;
 }
 
-webkit-scroll i {
+
+/*webkit-scroll i {
   margin: auto 5px;
-}
+}*/
 
 body {
   width: 100vw;
@@ -664,11 +665,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   ::-webkit-scrollbar {
-    width: 0px;
-  }
-
-  webkit-scroll i {
-    display: none;
+    width: 1px;
   }
 
   @keyframes slideDown {
@@ -950,7 +947,7 @@ a {
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   ::-webkit-scrollbar {
-    width: 0px;
+    width: 3px;
   }
 
   .apresentation {
