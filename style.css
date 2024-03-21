@@ -149,6 +149,8 @@ body {
 
 
 main {
+  display: flex;
+  justify-content: center;
   background-image: url(Imagens/gradiente.webp);
   background-position: center;
   background-repeat: repeat-y;
@@ -289,7 +291,7 @@ video.player-video::poster {
 section.apresentation-content {
   height: auto;
   width: 100vw;
-  margin: 5rem auto 0;
+  margin: 4rem auto;
 }
 
 .apresentation-box {
@@ -665,9 +667,6 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-  ::-webkit-scrollbar {
-    width: 1px;
-  }
 
   @keyframes slideDown {
     from {
@@ -761,11 +760,11 @@ a {
   }
 
   section.apresentation-content {
-    margin: 0.5rem;
+    margin: auto;
   }
 
   .apresentation-box {
-    margin: 0.5rem;
+    margin: auto;
   }
 
   .apresentation-box h1 {
@@ -947,9 +946,7 @@ a {
 
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  ::-webkit-scrollbar {
-    width: 3px;
-  }
+
 
   .apresentation {
     margin: auto;
