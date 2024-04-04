@@ -10,7 +10,19 @@ window.onscroll = () => {
     menu.classList.remove('fa-times');
     navbar.classList.remove('active');
 };
+//Script da Animação do Menu Fas Fas-bars
+let m = document.querySelector('#menu-btn');
+let n = document.querySelector('.header .navbar');
 
+m.onclick = () => {
+    m.classList.toggle('fa-times');
+    n.classList.toggle('active');
+    n.classList.toggle('animate-slide');
+};
+window.onscroll = () => {
+    m.classList.remove('fa-times');
+    n.classList.remove('active');
+};
 //Script da Animação das imagens automaticas 
 const box = document.querySelector(".container");
 const imagens = document.querySelectorAll(".container img");
@@ -25,7 +37,6 @@ function mudaImagem() {
 }
 setInterval(mudaImagem, 4000);
 console.log("ok");
-
 //Script das caixas de curso para Smartphone
 document.addEventListener("DOMContentLoaded", function () {
     const cursos = document.querySelectorAll(".curso");
@@ -54,7 +65,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-
 //Script da Animação das caixas com evento de Click no button
 document.addEventListener("DOMContentLoaded", function () {
     const cursos = document.querySelectorAll(".curso");
@@ -88,18 +98,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-//Script da Animação do Menu Fas Fas-bars
-let m = document.querySelector('#menu-btn');
-let n = document.querySelector('.header .navbar');
 
-m.onclick = () => {
-    m.classList.toggle('fa-times');
-    n.classList.toggle('active');
-    n.classList.toggle('animate-slide');
-};
-window.onscroll = () => {
-    m.classList.remove('fa-times');
-    n.classList.remove('active');
-};
 
 

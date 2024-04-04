@@ -613,73 +613,26 @@ a {
   display: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (min-width: 769px) {
   .controls {
     display: none;
   }
+
+  .vestibular {
+    margin: auto;
+  }
+
+  .vestibular h1 {
+    text-align: center;
+  }
 }
 
+/*Tablets SmartPhones*/
+@media screen and (max-width: 720px) {
+  main {
+    width: 90vw;
+  }
 
-
-
-
-
-
-
-
-
-@media only screen and (max-width:480px) {
   @keyframes slideDown {
     from {
       transform: translateY(-100%);
@@ -733,12 +686,14 @@ a {
   }
 
   .vestibular {
-    margin: 1rem auto;
+    margin: auto;
     height: 1rem;
   }
 
   .vestibular h1 {
+    text-align: center;
     font-size: 20px;
+    margin: 1rem auto;
   }
 
   .apresentation-video {
@@ -746,29 +701,52 @@ a {
     flex-direction: column;
   }
 
-  .apresentation-subtitle {
-    margin: 1rem auto;
+  div.apresentation-subtitle {
+    margin: auto;
+    padding: 0;
+  }
+
+  div.apresentation-box-text {
+    width: 90vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  div.apresentation-subtitle {
+    width: 90vw;
+    margin: 0;
+    padding: 0;
   }
 
   .apresentation-subtitle h2 {
-    width: 90%;
-    padding: 0.5rem auto;
-    margin: 0.5rem auto;
+    width: 90vw;
+    font-size: 1rem;
+    padding: 0.1rem auto;
+    margin: 0.1rem auto;
   }
 
   .apresentation-subtitle p {
     width: 90%;
-    padding: 0.5rem auto;
-    margin: 0.5rem auto;
+    padding: 0.1rem auto;
+    margin: 0.1rem auto;
   }
 
   table {
+    width: 90vw;
+    max-width: 90vw;
+    font-size: 13px;
     margin: auto;
+    border-collapse: collapse;
   }
 
-  /*Nesta parte precisa arrumar o elemento de tabela em media querie*/
+  table tr,
+  td {
+    border: 1px solid white;
+    padding-top: 0.5rem;
+  }
+
   video.player-video {
-    width: 90%;
+    width: 90vw;
   }
 
   section.apresentation-content {
@@ -777,25 +755,30 @@ a {
 
   .apresentation-box {
     margin: auto;
+    width: 90vw;
   }
 
-  .apresentation-box h1 {
-    font-size: 2.8rem;
+  .apresentation-content div.apresentation-box h1 {
+    font-size: 1.2rem;
     text-align: center;
   }
 
-  .apresentation-box p {
+  .apresentation-content div.apresentation-box p {
     font-size: 13px;
     text-align: justify;
+    line-height: 2rem;
   }
 
-  .box-titulo {
+  div.box-titulo {
     margin: auto;
     width: 90vw;
-    padding: 0.5rem auto;
+    padding: auto;
   }
 
   .box-titulo h1 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
     font-size: 3rem;
   }
 
@@ -880,23 +863,31 @@ a {
   }
 
   section.challenges {
-    margin: 0.5rem;
+    width: 90vw;
+    margin: 0;
+
   }
 
-  .content-challenges h1,
-  p {
-    font-size: 25px;
+  .challenges .content-challenges h1 {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    width: 90vw;
   }
 
-  .challenges .content-challenges p {
+  .challenges div.content-challenges p {
     text-align: justify;
-    font-size: 1.1rem;
-    margin: 0rem 1.5rem;
-    line-height: 2rem;
+    font-size: 1rem;
+    hyphens: auto;
+    margin: 0;
   }
 
   .text-background {
-    margin: 0.5rem 2rem;
+    margin: auto;
+  }
+
+  .text-background p {
+    font-size: 1rem;
   }
 
   footer {
@@ -928,407 +919,4 @@ a {
     font-size: 15px;
     letter-spacing: 1px;
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 768px) {
-
-  @keyframes slideDown {
-    from {
-      transform: translateY(-100%);
-      opacity: 0;
-    }
-
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-
-  .header .navbar {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    text-align: center;
-    animation: slideDown 0.5s forwards;
-  }
-
-  .features,
-  .box-container {
-    display: none;
-  }
-
-  .header .navbar.active {
-    display: block;
-  }
-
-  /*Teste*/
-  .header .navbar.active a {
-    display: block;
-    font-family: 'Azonix';
-    font-size: 20px;
-    letter-spacing: 10px;
-    margin: 10px 0;
-  }
-
-  #menu-btn {
-    display: block;
-  }
-
-  .apresentation,
-  .apresentation p {
-    margin: 1rem;
-    font-size: 40px;
-    letter-spacing: 0.5px;
-  }
-
-  .vestibular {
-    margin: 1rem;
-    height: 1rem;
-  }
-
-  .vestibular h1 {
-    font-size: 20px;
-  }
-
-  .apresentation-video {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .apresentation-subtitle {
-    margin: 1rem;
-  }
-
-  .apresentation-subtitle h2 {
-    width: 90%;
-    padding: 0.5rem;
-    margin: 0.5rem;
-  }
-
-  .apresentation-subtitle p {
-    width: 90%;
-    padding: 0.5rem;
-    margin: 0.5rem;
-  }
-
-  table {
-    margin: auto;
-  }
-
-  /*Nesta parte precisa arrumar o elemento de tabela em media querie*/
-  video.player-video {
-    width: 90%;
-  }
-
-  section.apresentation-content {
-    margin: auto;
-  }
-
-  .apresentation-box {
-    margin: auto;
-  }
-
-  .apresentation-box h1 {
-    font-size: 2.8rem;
-    text-align: center;
-  }
-
-  .apresentation-box p {
-    font-size: 13px;
-    text-align: justify;
-  }
-
-  .box-titulo {
-    margin: auto;
-    width: 90vw;
-    padding: 0.5rem;
-  }
-
-  .box-titulo h1 {
-    font-size: 3rem;
-  }
-
-  .content-curso {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .box-curso {
-    overflow: hidden;
-    white-space: nowrap;
-    width: 100%;
-  }
-
-  .container-curso {
-    margin-top: 0rem auto;
-    margin-bottom: 2rem;
-    min-height: 200px;
-
-  }
-
-  .content-data-curso {
-    margin-top: max-content auto;
-    min-height: max-content;
-  }
-
-  p.title-curso,
-  p.subtitle-curso {
-    margin: 0.1rem;
-    padding: 0.1rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 18px;
-  }
-
-  .curso {
-    width: 90%;
-    min-height: 300px;
-    margin: auto;
-    color: white;
-    background-color: transparent;
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin-bottom: 20px;
-    display: none;
-    /* Oculta todas as caixas por padrão */
-    animation: slideIn 1s ease-out;
-    /* Aplica a animação de movimento */
-  }
-
-  .curso.hidden {
-    display: none;
-    /* Altera a exibição para ocultar a caixa */
-  }
-
-  @keyframes slideIn {
-    from {
-      margin-left: 100%;
-      /* Começa da esquerda para fora da tela */
-    }
-
-    to {
-      margin-left: 0;
-      /* Move a caixa para a posição inicial */
-    }
-  }
-
-  .controls {
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  .controls button {
-    background-color: #15191c;
-    color: #ed145b;
-    width: max-content;
-    padding: 0.8rem 1.5rem;
-    font-size: 20px;
-    font-weight: 600;
-  }
-
-  section.challenges {
-    margin: 0.5rem;
-  }
-
-  .content-challenges h1,
-  p {
-    font-size: 25px;
-  }
-
-  .challenges .content-challenges p {
-    text-align: justify;
-    font-size: 1.1rem;
-    margin: 0rem 1.5rem;
-    line-height: 2rem;
-  }
-
-  .text-background {
-    margin: 0.5rem 2rem;
-  }
-
-  footer {
-    margin: 0rem auto;
-    padding: 0.3rem;
-    display: flex;
-    justify-content: center;
-  }
-
-  .footer-content {
-    width: max-content;
-    padding: 0.5rem;
-  }
-
-  .footer-content a {
-    font-size: 15px;
-  }
-
-  .footer-content p#identifier-main {
-    padding-bottom: 0.5rem;
-  }
-
-  .footer-content p#secondary-identifier {
-    font-size: 15px;
-    padding-bottom: 0.8rem;
-  }
-
-  .end p#dev {
-    font-size: 15px;
-    letter-spacing: 1px;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-
-
-  .apresentation {
-    margin: auto;
-    height: auto;
-    padding: 2.5rem;
-  }
-
-  .apresentation p {
-    font-size: 4rem;
-    text-align: center;
-  }
-
-  #vestibular {
-    height: max-content;
-    margin: 0.5rem;
-  }
-
-  #vestibular h1 {
-    margin: 1rem;
-  }
-
-  .apresentation-video {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .apresentation-subtitle {
-    width: 90vw;
-    padding: 1px;
-  }
-
-  .apresentation-subtitle h2 {
-    font-size: 30px;
-    font-weight: bold;
-  }
-
-  .apresentation-subtitle p {
-    font-size: 23px;
-  }
-
-  table {
-    margin: auto;
-    padding: 2rem 0rem;
-    text-align: center;
-    border: 2px solid white;
-    border-radius: 5px;
-    font-size: 25px;
-  }
-
-  video.player-video {
-    width: 90vw;
-  }
-
-  section.apresentation-content {
-    margin: 0.5rem;
-  }
-
-  .apresentation-box {
-    margin: 0.5rem;
-  }
-
-  .apresentation-box h1 {
-    max-width: 90vw;
-  }
-
-  .apresentation-box p {
-    text-align: justify;
-  }
-
-  div.box-titulo {
-    margin: 0.5rem auto;
-    padding: 0.5rem;
-    max-width: 90vw;
-  }
-
-  .features {
-    margin: auto;
-  }
-
-  .box-container {
-    margin: auto;
-    max-width: 90vw;
-  }
-
-  section.challenges {
-    margin: 0.5rem auto;
-  }
-
-  .content-challenges {
-    max-width: 90vw;
-    margin: auto
-  }
-
-  .challenges .content-challenges p {
-    max-width: 90vw;
-    text-align: justify;
-    padding-top: 1rem;
-  }
-
-  .end p {
-    font-size: 1.5rem;
-  }
-
 }
