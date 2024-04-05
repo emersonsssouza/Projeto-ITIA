@@ -876,8 +876,10 @@ a {
   }
 
   .challenges div.content-challenges p {
+    color: white;
     text-align: justify;
     font-size: 1rem;
+    line-height: 1.5rem;
     hyphens: auto;
     margin: 0;
   }
@@ -888,6 +890,7 @@ a {
 
   .text-background p {
     font-size: 1rem;
+    line-height: 2rem;
   }
 
   footer {
@@ -918,5 +921,366 @@ a {
   .end p#dev {
     font-size: 15px;
     letter-spacing: 1px;
+  }
+}
+
+/*LandScape SmartPhone*/
+@media only screen and (min-aspect-ratio: 1/1) and (max-width: 1024px) {
+
+  /* Estilos para quando a largura é maior que a altura (modo paisagem) 
+     e a largura da tela é no máximo 720 pixels
+     SmartPhones Grandes
+  */
+  main {
+    width: 90vw;
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .header .navbar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    animation: slideDown 0.5s forwards;
+  }
+
+  .features,
+  .box-container {
+    display: none;
+  }
+
+  .header .navbar.active {
+    display: block;
+  }
+
+  /*Teste*/
+  .header .navbar.active a {
+    display: block;
+    font-family: 'Azonix';
+    font-size: 20px;
+    letter-spacing: 10px;
+    margin: 10px 0;
+  }
+
+  #menu-btn {
+    display: block;
+  }
+
+  .apresentation,
+  .apresentation p {
+    margin: auto;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+  }
+
+  .vestibular {
+    margin: auto;
+    height: 1rem;
+  }
+
+  .vestibular h1 {
+    text-align: center;
+    font-size: 20px;
+    margin: 1rem auto;
+  }
+
+  .apresentation-video {
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.apresentation-subtitle {
+    margin: auto;
+    padding: 0;
+  }
+
+  div.apresentation-box-text {
+    width: 90vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  div.apresentation-subtitle {
+    width: 90vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .apresentation-subtitle h2 {
+    width: 90vw;
+    font-size: 1rem;
+    padding: 0.1rem auto;
+    margin: 0.1rem auto;
+  }
+
+  .apresentation-subtitle p {
+    width: 90%;
+    padding: 0.1rem auto;
+    margin: 0.1rem auto;
+  }
+
+  table {
+    width: 90vw;
+    max-width: 90vw;
+    font-size: 13px;
+    margin: auto;
+    border-collapse: collapse;
+  }
+
+  table tr,
+  td {
+    border: 1px solid white;
+    padding-top: 0.5rem;
+  }
+
+  video.player-video {
+    width: 90vw;
+  }
+
+  section.apresentation-content {
+    margin: auto;
+  }
+
+  .apresentation-box {
+    margin: auto;
+    width: 90vw;
+  }
+
+  .apresentation-content div.apresentation-box h1 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .apresentation-content div.apresentation-box p {
+    font-size: 13px;
+    text-align: justify;
+    line-height: 2rem;
+  }
+
+  div.box-titulo {
+    margin: auto;
+    width: 90vw;
+    padding: auto;
+  }
+
+  .box-titulo h1 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 3rem;
+  }
+
+  .content-curso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box-curso {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  .container-curso {
+    margin-top: 0 auto;
+    margin-bottom: 2rem;
+    min-height: 200px;
+
+  }
+
+  .content-data-curso {
+    margin-top: max-content auto;
+    min-height: max-content;
+  }
+
+  p.title-curso,
+  p.subtitle-curso {
+    margin: 0.1rem auto;
+    padding: 0.1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+  }
+
+  .curso {
+    width: 90%;
+    min-height: 300px;
+    margin: auto;
+    color: white;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: none;
+    /* Oculta todas as caixas por padrão */
+    animation: slideIn 1s ease-out;
+    /* Aplica a animação de movimento */
+  }
+
+  .curso.hidden {
+    display: none;
+    /* Altera a exibição para ocultar a caixa */
+  }
+
+  @keyframes slideIn {
+    from {
+      margin-left: 100%;
+      /* Começa da esquerda para fora da tela */
+    }
+
+    to {
+      margin-left: 0;
+      /* Move a caixa para a posição inicial */
+    }
+  }
+
+  .controls {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .controls button {
+    background-color: #15191c;
+    color: #ed145b;
+    width: max-content;
+    padding: 0.8rem 1.5rem;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  section.challenges {
+    width: 90vw;
+    margin: 0;
+
+  }
+
+  .challenges .content-challenges h1 {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    width: 90vw;
+  }
+
+  .challenges div.content-challenges p {
+    color: white;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    hyphens: auto;
+    margin: 0;
+  }
+
+  .text-background {
+    margin: auto;
+  }
+
+  .text-background p {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  footer {
+    margin: 0rem auto;
+    padding: 0.3rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-content {
+    width: max-content;
+    padding: 0.5rem;
+  }
+
+  .footer-content a {
+    font-size: 15px;
+  }
+
+  .footer-content p#identifier-main {
+    padding-bottom: 0.5rem;
+  }
+
+  .footer-content p#secondary-identifier {
+    font-size: 15px;
+    padding-bottom: 0.8rem;
+  }
+
+  .end p#dev {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+}
+
+/* Estilos para iPad 4 em modo retrato */
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (orientation: portrait) {
+  /* Seus estilos aqui
+  Media para Tablet em modo Portrait */
+
+  section.apresentation {
+    max-width: 90vw;
+    height: 15rem;
+
+  }
+
+  section.apresentation .apresentation p span {
+    width: 90vw;
+    font-size: 1rem;
+  }
+
+  span.f1,
+  span.f3 {
+    font-size: 2rem;
+  }
+
+  span.f2 {
+    font-size: 1rem;
+  }
+
+  section.apresentation-video {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .apresentation-video video {
+    width: 90%;
+  }
+
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1199px) {
+
+  /* Estilos para tablets em modo Paisagem */
+  section.apresentation {
+    max-width: 90vw;
+
+  }
+
+  section.apresentation .apresentation p span {
+    width: 90vw;
+    font-size: 1rem;
+  }
+
+  span.f1,
+  span.f3 {
+    font-size: 2rem;
+  }
+
+  span.f2 {
+    font-size: 1rem;
   }
 }

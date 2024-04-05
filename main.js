@@ -33,7 +33,7 @@ function mudaImagem() {
     if (contador > imagens.length - 1) {
         contador = 0;
     }
-    box.style.transform = `translateX(${-contador * 1800}px)`
+    box.style.transform = `translateX(${-contador * 1700}px)`
 }
 setInterval(mudaImagem, 4000);
 console.log("ok");
